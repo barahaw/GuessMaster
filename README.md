@@ -4,6 +4,12 @@ A modern, interactive web game where you compete against a smart AI to guess a r
 
 ---
 
+## 🌐 Live Demo
+
+Play the game online: [https://numberwar.netlify.app/](https://numberwar.netlify.app/)
+
+---
+
 ## 🚀 Features
 
 - **Difficulty Levels:** Select from Easy (1–10), Medium (1–50), or Hard (1–100) to match your skill.
