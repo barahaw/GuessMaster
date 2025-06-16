@@ -202,7 +202,7 @@ if (recognition) {
           break;
         }
       }
-\      if (isNaN(spokenNumber)) {
+      if (isNaN(spokenNumber)) {
         const compound = lowerTranscript.match(
           /(twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)[ -]?(one|two|three|four|five|six|seven|eight|nine)?/
         );
