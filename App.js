@@ -6,6 +6,9 @@ const difficultySelect = document.getElementById("difficulty");
 const hintDisplay = document.getElementById("hint");
 const timerInput = document.getElementById("timerInput");
 const scoreboard = document.getElementById("scoreboard");
+const themeToggle = document.getElementById("themeToggle");
+const body = document.body;
+const card = document.querySelector(".card");
 
 let attempts = 0;
 const maxAttempts = 10;
@@ -239,6 +242,38 @@ function speakAI(text) {
     window.speechSynthesis.speak(utter);
   }
 }
+
+function setTheme(isDark) {
+  if (isDark) {
+    body.classList.remove("bg-light");
+    body.classList.add("bg-dark", "text-light");
+    card.classList.remove("bg-white");
+    card.classList.add("bg-dark", "text-light");
+    themeToggle.textContent = "☀️ Light Mode";
+    themeToggle.classList.remove("btn-outline-dark");
+    themeToggle.classList.add("btn-outline-light");
+    attemptsDisplay.classList.remove("text-muted");
+    attemptsDisplay.classList.add("text-white");
+  } else {
+    body.classList.remove("bg-dark", "text-light");
+    body.classList.add("bg-light");
+    card.classList.remove("bg-dark", "text-light");
+    card.classList.add("bg-white");
+    themeToggle.textContent = "🌙 Dark Mode";
+    themeToggle.classList.remove("btn-outline-light");
+    themeToggle.classList.add("btn-outline-dark");
+    attemptsDisplay.classList.remove("text-white");
+    attemptsDisplay.classList.add("text-muted");
+  }
+}
+
+setTheme(false);
+
+let darkMode = false;
+themeToggle.addEventListener("click", () => {
+  darkMode = !darkMode;
+  setTheme(darkMode);
+});
 
 startGame();
 updateScoreboard();

@@ -1,6 +1,6 @@
 # Number Guessing Game
 
-A modern, interactive web game where you compete against a smart AI to guess a randomly selected number. The AI leverages a binary search strategy for efficient guessing. The game offers multiple difficulty levels, a customizable timer, real-time hints, a persistent scoreboard, and advanced voice control for accessibility and fun.
+A modern, interactive web game where you compete against a smart AI to guess a randomly selected number. The AI leverages a binary search strategy for efficient guessing. The game offers multiple difficulty levels, a customizable timer, real-time hints, a persistent scoreboard, advanced voice control, and a dark/light mode toggle for accessibility and fun.
 
 ---
 
@@ -19,6 +19,7 @@ Play the game online: [https://numberwar.netlify.app/](https://numberwar.netlify
 - **Scoreboard:** Tracks wins and best scores for both you and the AI, with persistent storage across sessions.
 - **Voice-Controlled Guessing:** Use your voice to say your guess out loud. The game recognizes numbers up to 100, including phrases like "forty-two" or "one hundred". (Requires a supported browser)
 - **AI Voice Feedback:** The AI can respond with spoken feedback using speech synthesis.
+- **Dark/Light Mode Toggle:** Instantly switch between dark and light themes for comfortable play in any environment.
 - **Responsive UI:** Clean, user-friendly interface built with Bootstrap.
 
 ---
@@ -33,13 +34,14 @@ Play the game online: [https://numberwar.netlify.app/](https://numberwar.netlify
    - Guess the number before the AI does.
    - Or, guess correctly before time or attempts run out.
 6. **Track Progress:** View your wins and best scores on the scoreboard.
+7. **Switch Theme:** Use the theme toggle button to switch between dark and light modes at any time.
 
 ---
 
 ## 🗂️ Project Structure
 
 - `index.html` — Main HTML file for the game interface.
-- `App.js` — JavaScript logic for gameplay, AI, voice control, and UI updates.
+- `App.js` — JavaScript logic for gameplay, AI, voice control, theme toggle, and UI updates.
 - `README.md` — Game documentation and instructions.
 
 ---
@@ -47,7 +49,7 @@ Play the game online: [https://numberwar.netlify.app/](https://numberwar.netlify
 ## ⚙️ Customization & Persistence
 
 - Change difficulty or timer at any time to start a new game.
-- All stats are automatically saved in your browser’s local storage.
+- All stats and theme preference are automatically saved in your browser’s local storage.
 
 ---
 
