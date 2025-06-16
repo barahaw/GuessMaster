@@ -1,6 +1,6 @@
 # Number Guessing Game
 
-A modern, interactive web game where you compete against a smart AI to guess a randomly selected number. The AI leverages a binary search strategy for efficient guessing. The game offers multiple difficulty levels, a customizable timer, real-time hints, and a persistent scoreboard to track your progress.
+A modern, interactive web game where you compete against a smart AI to guess a randomly selected number. The AI leverages a binary search strategy for efficient guessing. The game offers multiple difficulty levels, a customizable timer, real-time hints, a persistent scoreboard, and advanced voice control for accessibility and fun.
 
 ---
 
@@ -11,6 +11,8 @@ A modern, interactive web game where you compete against a smart AI to guess a r
 - **Smart AI Opponent:** The AI uses a binary search algorithm to guess efficiently.
 - **Hints System:** Receive immediate feedback if your guess is too high or too low.
 - **Scoreboard:** Tracks wins and best scores for both you and the AI, with persistent storage across sessions.
+- **Voice-Controlled Guessing:** Use your voice to say your guess out loud. The game recognizes numbers up to 100, including phrases like "forty-two" or "one hundred". (Requires a supported browser)
+- **AI Voice Feedback:** The AI can respond with spoken feedback using speech synthesis.
 - **Responsive UI:** Clean, user-friendly interface built with Bootstrap.
 
 ---
@@ -18,7 +20,7 @@ A modern, interactive web game where you compete against a smart AI to guess a r
 ## 🎮 How to Play
 
 1. **Select Difficulty:** Choose your preferred range and set the timer (optional).
-2. **Start Guessing:** Enter your guess and click **Guess**.
+2. **Start Guessing:** Enter your guess and click **Guess**, or use the **🎤 Speak Guess** button to say your number.
 3. **Compete with AI:** The AI will make its own guess each round.
 4. **Get Hints:** Use the provided hints to adjust your next guess.
 5. **Win Conditions:**
@@ -30,8 +32,8 @@ A modern, interactive web game where you compete against a smart AI to guess a r
 
 ## 🗂️ Project Structure
 
-- `number.html` — Main HTML file for the game interface.
-- `number.js` — JavaScript logic for gameplay, AI, and UI updates.
+- `index.html` — Main HTML file for the game interface.
+- `App.js` — JavaScript logic for gameplay, AI, voice control, and UI updates.
 - `README.md` — Game documentation and instructions.
 
 ---
@@ -43,12 +45,10 @@ A modern, interactive web game where you compete against a smart AI to guess a r
 
 ---
 
+Enjoy the challenge, and see if you can outsmart the AI!
+
 ---
 
 ## 👤 Author
 
 Developed by **Baraa Hawamdeh**
-
----
-
-Enjoy the challenge, and see if you can outsmart the AI!
