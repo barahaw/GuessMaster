@@ -9,6 +9,7 @@ const scoreboard = document.getElementById("scoreboard");
 const themeToggle = document.getElementById("themeToggle");
 const body = document.body;
 const card = document.querySelector(".card");
+const instructions = document.getElementById("instructions");
 
 let attempts = 0;
 const maxAttempts = 10;
@@ -58,8 +59,15 @@ function aiMakeGuess() {
   return guess;
 }
 
+function showInstructions() {
+  instructions.textContent =
+    "Enter your guess and click 'Guess' or use the 🎤 Speak Guess button!";
+  instructions.style.display = "block";
+}
+
 function startGame() {
   resetGame();
+  showInstructions();
   if (timer) clearInterval(timer);
   timer = setInterval(() => {
     time--;
